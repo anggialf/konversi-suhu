@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Konversi Suhu</title>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="shadow bg-light m-5 p-5 position-fixed">
+            <h3 class="text-center">
+                Temperature Convertion
+            </h3>
+            
+            <hr>
+
+            <form>
+                <div class="form-group">
+                    <label for="from">Convert from :</label>
+                    <select class="form-control" name="from" id="from">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="to">Convert to :</label>
+                    <select class="form-control" name="to" id="to">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="temperature">Temperature :</label>
+                    <input type="number"
+                    class="form-control" name="temperature" id="temperature" placeholder="Input number">
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="result" id="resultLabel">Result :</label>
+                    <input type="number"
+                        class="form-control" name="result" id="result">
+                </div>    
+                
+                <button type="button" class="btn btn-info" onclick="convertSuhu()">Convert</button>
+
+            </form>
+            
+        </div>
+    </div>
+    <div style="padding: 10px; text-align: center;">
+        <label for="changecolors">Change color :</label>
+        <input type="text" id="colorInputText" placeholder="Input color">
+        <button type="button" class="btn btn-info" onclick="changeColor()">Change</button>
+    </div>
+
+   
+
+
+</body>
+</html>
